@@ -58,8 +58,10 @@ def filter(src_addr: str):
 
 if __name__ == "__main__":
     train_xlsx_path = os.getcwd() + "\\address_sample_ 2.xlsx"
+    src_addr_path = os.getcwd() + "\\input.xlsx"
     train(train_xlsx_path)
-    df = pd.read_excel(train_xlsx_path, sheet_name="Sheet1")
+    
+    df = pd.read_excel(src_addr_path, sheet_name="Sheet1")
     
     dst_addr_list = []
     
